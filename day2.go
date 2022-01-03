@@ -1,0 +1,311 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+var ids = `fonbsmjyqugrapsczckghtvdxl
+fonpsmjyquwrnpeczikghtvdxw
+fonbsmdymuwrapexzikghtvdxl
+fonwsmjyquwrapeczikghttdpl
+fonbsmjkquwrapeczjkghtvdxx
+yonbsmjyquwrapecgikghtvdxc
+donbsmjyquqrapeczikghtadxl
+monbsmjyquprgpeczikghtvdxl
+fonbsmjyquwvapecqgkghtvdxl
+fonbsmjyquwrkphczikghsvdxl
+fonbomjyeuwvapeczikghtvdxl
+fonwsmjyjuwrapoczikghtvdxl
+foybsmjyquwcapeczikghsvdxl
+fonbsmjyquwrtaeczikgptvdxl
+ponbsmpyquwjapeczikghtvdxl
+flnbcmjyquwrqpeczikghtvdxl
+fonbsmjyquwrapegzikvbtvdxl
+fonbjmjyqgwrazeczikghtvdxl
+zoabsmjyquwkapeczikghtvdxl
+fonbsmjyquwrapecziktxkvdxl
+fonbsxjyrpwrapeczikghtvdxl
+fonbsmjbquwqapeciikghtvdxl
+lonbsmjyquwraphczikghtvdul
+ftnbsmjyquwrapcczikghtxdxl
+fonbsmjyqgwrapeczikghtldxc
+fonbsmjsquwmapeyzikghtvdxl
+fonbsmjyqfwrapecziqghtgdxl
+yonbsmjyquwraveczikgftvdxl
+fovbsmjyquwrapeczikggkvdxl
+fonbsmjyquwrapezzikghbvdvl
+fonzsmxyquwrapeczukghtvdxl
+fonbemjyquwrapevzikghtvrxl
+conbsxjxquwrapeczikghtvdxl
+fonbsmjsmewrapeczikghtvdxl
+folbsmjyqhwrapqczikghtvdxl
+fonbsmjyquwrzneczikghtvdxn
+fonbsmjyquirapeczikjhtvdll
+fontsmgyquwrgpeczikghtvdxl
+fonbsmjyauwrapeczbfghtvdxl
+ftnbsmjyquwrapecpifghtvdxl
+fonvsmjyqewrapeczikghlvdxl
+fonbsljyquwrapecziklhtvdxw
+fonbbmjyquwrapeczikghvadxl
+ponbsmjyquwrspeczikghivdxl
+fonbsmjcquwrapeccikghtvuxl
+fonbsmjnquwrapetzikghtvlxl
+fonbsmjymuwrapeczieghtvdxr
+ffnbsxnyquwrapeczikghtvdxl
+fonbsmjytuwrajeczzkghtvdxl
+fonssmjyquwhapeczikghkvdxl
+fonbsajyuuwrapeczikghlvdxl
+fonbsmjyquwrapeczihghtcixl
+fohbsmjyquwrapzczirghtvdxl
+fonbsmjyquwrapecjqnghtvdxl
+fonbsmjytuhrapeczihghtvdxl
+foabumjyquwrapeczikghtvdxz
+conbsmjyqtwrapeczikggtvdxl
+fonbsmjyiqwrapeczokghtvdxl
+fondsmjypuwrapeczikghtvjxl
+fonbswjyquwrapeczikgvtydxl
+fonbsmjyqqwrapeczikkhtvdbl
+fonbsmjyquwrapemzitghtvdsl
+fonbsmjyquwrspecziegxtvdxl
+fonbsmpyquwrgpeczikghtwdxl
+fodbsmjqquwrapeczmkghtvdxl
+fonbsmjkquwrapeczikghpvdxr
+fonbsmjyquwrapeczikshzvmxl
+fznbsmjyqulrapeczikghkvdxl
+fonbsmjyquwripeczikghtbdjl
+fcnbsmjyquzrapecyikghtvdxl
+ronbxmjyquwrapeczikghgvdxl
+fonbsmuyvuwrgpeczikghtvdxl
+fonbsmjyyuwraplczikghtudxl
+poxbsmjyqewrapeczikghtvdxl
+foabsmjyquwrapecziqghtvpxl
+ponbsmjrquwrapeczikchtvdxl
+fonzzmjyquwrapeczikghtvdxs
+wonbsmjyquwghpeczikghtvdxl
+fofbsejyquwrapeczikgctvdxl
+ponbsmjyquwrayegzikghtvdxl
+fonbumjyquwripeczikghtvdxf
+fonbsmqyquwrapeczikgftvdxv
+qonbsmjyquwraplczitghtvdxl
+fmnbsajdquwrapeczikghtvdxl
+fonbsrjyquwrapempikghtvdxl
+fonbsmjyquwrapeczikgotudxw
+fonbsmtyquwrapeflikghtvdxl
+fzqbsmjyquwrapecjikghtvdxl
+fdnbsmjyquwraqeclikghtvdxl
+fvnbsijyquwrapechikghtvdxl
+fovbsmjyquwsapeczikghqvdxl
+ffjbsmjyqgwrapeczikghtvdxl
+fonbsmjyquwrapeczvkhhivdxl
+forbamjjquwrapeczikghtvdxl
+fonbwmjyquwtapeyzikghtvdxl
+fonvsmjyquwrapeczikglnvdxl
+fonnsmjyguwrapeczikghtvxxl
+fopbsmjyquwrapeczikghtvaxz
+fonbsmjyquwiapeczikrhavdxl
+fonbsujyquwrapeczikthtvdjl
+fonpsmkyeuwrapeczikghtvdxl
+fonbsmjyquwrapeczqkgttvdxk
+fonbsmjyqzwrapeczikgrtddxl
+fokbsmjiquwrapeczikgltvdxl
+fonbsmjyqbwrapeczikghttdxo
+fonbsejyquwrapeczikghbvdal
+fonblmjyquwyaveczikghtvdxl
+fonbsmjyquwlzpepzikghtvdxl
+fonbsmjyqulrapbczigghtvdxl
+fonbsmjyxuwrapecziyghtvsxl
+fonbyjjyquwrapeczikghtvdxn
+fonbhmjyquwrapeczikghtjhxl
+fonbspjykuwraieczikghtvdxl
+aonbsmjyquwwapeczikchtvdxl
+fombsmjyquwyapeczikghtvdll
+fonbsmjynuwrapeczivgbtvdxl
+xonbsmjfquwrapeczikghqvdxl
+fonbyzjyquwzapeczikghtvdxl
+fbnbsmjyquwrapeczimgvtvdxl
+qonbsmjyquwraoeczikgftvdxl
+fonbsrjyquwrapeczikghtvjxm
+fonbsmjyquwrapxjzykghtvdxl
+fonbwgjyquwrapecziklhtvdxl
+fonjcmjyouwrapeczikghtvdxl
+fonbsmjyquwrapefzisuhtvdxl
+fonbsmjyqywrspeczikghtvnxl
+qonbsmjyquwrapeczlkuhtvdxl
+fonbsmjyqlprapeczikghtvdbl
+fonbsmjzquwrapedzikfhtvdxl
+fonbsmjyquwrapeczizghtvjxq
+fonbsmxyquwrrpeczikghtvcxl
+fonpsmjyquwoapeczikghjvdxl
+fonbshkyauwrapeczikghtvdxl
+fonbsmjysuwrapeczilghpvdxl
+fovwsxjyquwrapeczikghtvdxl
+fonbsmjyquwrppecnikghmvdxl
+fonbkmjyiuwrrpeczikghtvdxl
+gonbsmjyquwrapeczikphtudxl
+foncsmjyqlwrapeczimghtvdxl
+fonbsmjhquwrtpeczikghtvdxg
+fogbsmjyquarapeczikghtvdil
+fonbsmjyquwraperzekghwvdxl
+fonbstjyquwrapeczicghtedxl
+fonbsmjoquhrapeczikgotvdxl
+fonbsmjykuwrareczikgdtvdxl
+fonbsmjyvuwrayeczivghtvdxl
+fonbzmgyquwraptczikghtvdxl
+fonbsmjyqubrapeczikgftvdxb
+fonbgmjyjuwrapeczikghtvdul
+fonbsmjzqurrapeczikghtvfxl
+fonbsmjyiuwrapeczikgstvtxl
+fpnbstjyquwrapeczikghtvdcl
+fonbpmjyquwrapeczivghtndxl
+fonbsmjyquwrapeczilgptvvxl
+fonbsmjyqdwripecbikghtvdxl
+fonbsmjytuwgapnczikghtvdxl
+fonbsejyquwrapedzikghtvdml
+fonbsojyqdwrapeczikghtgdxl
+fonbsmjykuwrayeczicghtvdxl
+foubsmtyquwrapeczikchtvdxl
+fonbqmjyqukrapeyzikghtvdxl
+fonbsmjyquwaapenzikghtvdwl
+fonbsmeyquwrapeyzixghtvdxl
+fonusmjyquhrapeczikgytvdxl
+fonbsmjyquwrapwazikqhtvdxl
+fonwsmeyquwrapeczikghhvdxl
+fonmsmjyquxrspeczikghtvdxl
+fonqsmjyqxwrapeczikghtvdml
+fonfsmjyquwrapeuzikgatvdxl
+fonvsmjyquwrapeczikgrtvdul
+fonbsmayquwrapeczikihtvdxm
+fonbsmnyquwrapecdifghtvdxl
+fonbsmjyeuwraseczikghtvdxo
+fonbvvjyquwrapeczikghtvdxi
+fonbsmjyquwrapeczbkghtorxl
+tonbsmjyqvwrapeczikghtvdcl
+fonbsmjyquwrapeczhkgbtvdkl
+fonqsmjyquwrapenzibghtvdxl
+fontsmeyqudrapeczikghtvdxl
+qonbsmjyauwrapeczikghtvdbl
+fynbsmjyluwrapeczekghtvdxl
+fonbsmjhquwrappczikghtvdxt
+conbsmjyquwrapeczikahtvdxz
+fonbsmjyquorapeczikvftvdxl
+fonbsriyquwrapeczikchtvdxl
+yonfsmjyquwrapeczikghtvdxq
+fonaomjyquwrapecziwghtvdxl
+fonbsxsyqdwrapeczikghtvdxl
+fonbsqjyouwrapeczikgltvdxl
+fonbstsyquwraleczikghtvdxl
+fonbsmjyquwraoecztkghtvdsl
+fonbsmjyquwrapezzjkghmvdxl
+fonbwmjyqnwrapecpikghtvdxl
+fonbsmvyqbwrapeczikghtvdsl
+fonbsijyquwrazeczikghtvdwl
+fonbsmjyouwrapewzikghtldxl
+xonbsmjyqcwrapeczikghtvdul
+fonbgmjxquwrajeczikghtvdxl
+fokbsmjyquwrapechikghtrdxl
+fonbqmjyqawrapeczikghtrdxl
+fonbwmjzquwtapeyzikghtvdxl
+fonbsmjyquwrapecdikgatvdnl
+fonbsmjyqowrkpeczikghtvdxj
+fonbsmjyquwkapejzikuhtvdxl
+fonbsmjyquwrabeozikghtmdxl
+fonbsijyeuwrapeczikghtvdxh
+fonbsmjhquprapeczizghtvdxl
+fonesmjyquwrapcczikghtvdxh
+fonbamjyquwrapeczifrhtvdxl
+foabsmjyquwpapeczikghtvdxs
+fonbsmjyquwrapeczukghivdxh
+fonbsejyoulrapeczikghtvdxl
+fonbsmjyquwraceczikgdmvdxl
+eonbsmjyquerppeczikghtvdxl
+ffnzsmjyquwgapeczikghtvdxl
+donbsmyyquwrapeczirghtvdxl
+fjnbsmjyqufrapeczikghtwdxl
+fonfsmjyquwrareczigghtvdxl
+fonusmjyquwrapeczikgetvexl
+tonbsmjyqpwrapeczikghtjdxl
+fonbsmjhqukkapeczikghtvdxl
+fonbsmjyqusraseczikghtvzxl
+fonbsmjyquygapeczxkghtvdxl
+folbsmjyquwraqeczikghjvdxl
+fonbsmjyquwrppecjinghtvdxl
+fonbsmjyquwraepczhkghtvdxl
+fonbfmjyquwrapeczisghtrdxl
+fsnbsmjwqubrapeczikghtvdxl
+fonbspjyquwrapjczikghtedxl
+fowbsmjyquwrapeczikghtbdbl
+fonbymjyquwrapeczikghlvdrl
+fonbsmjyruwrapecbikghtvixl
+fonyqmjyqufrapeczikghtvdxl
+focbscjyquwrapeczmkghtvdxl
+fonbsmjyqtwnkpeczikghtvdxl
+eonbsmjyquwrameczizghtvdxl
+zonbsmjyqcwrapeczikghtvhxl
+foubsmjyquwrapehzikghtvnxl
+ffnbsmjyquwrapetzikghtjdxl
+fonbjgjyquwrapkczikghtvdxl
+fonbwmjyquwqapeczdkghtvdxl
+forbsmjyquwrapeczikkhtvdml
+fonbsmjyiuwrapeczivghevdxl
+fonbsmjyquwrapeglikghwvdxl
+fopgsmjyquwrapegzikghtvdxl
+fonbsmjyqzwrajeczikghtldxl
+fonbsmjyruwrapexzmkghtvdxl
+fonbsmjyquwrdpeczikxstvdxl
+fonbsmjyquwrapeezivghtvdql
+fonbdmjyqujsapeczikghtvdxl`
+
+func checksum(s string) (int, int) {
+	counts := map[rune]int{}
+	for _, c := range s {
+		counts[c] += 1
+	}
+	twos, threes := 0, 0
+	for _, c := range counts {
+		if c == 2 {
+			twos = 1
+		} else if c == 3 {
+			threes = 1
+		}
+	}
+	return twos, threes
+}
+
+func almostsame(s, t string) bool {
+	diffs := 0
+	for i := range s {
+		if s[i] != t[i] {
+			diffs++
+		}
+	}
+	return diffs == 1
+}
+
+func samechars(s, t string) string {
+	var r strings.Builder
+	for i := range s {
+		if s[i] == t[i] {
+			r.WriteByte(s[i])
+		}
+	}
+	return r.String()
+}
+
+func main() {
+	twos, threes := 0, 0
+	lines := strings.Split(ids, "\n")
+	for _, line := range lines {
+		a, b := checksum(line)
+		twos += a
+		threes += b
+	}
+	fmt.Println(twos * threes)
+	for i := range lines {
+		for j := i + 1; j < len(lines); j++ {
+			if almostsame(lines[i], lines[j]) {
+				fmt.Println(samechars(lines[i], lines[j]))
+			}
+		}
+	}
+}
