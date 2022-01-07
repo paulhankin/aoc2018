@@ -64,7 +64,7 @@ func react(input []byte) int {
 }
 
 func main() {
-	input, err := ioutil.ReadFile("day5.txt")
+	input, err := ioutil.ReadFile("./day5/day5.txt")
 	if err != nil {
 		panic(err)
 	}
