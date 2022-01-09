@@ -68,6 +68,72 @@ func (g *grid) get(i, j int) byte {
 	return g.g[j][i]
 }
 
+func (g *grid) tick() bool {
+	changed := false
+	isblocked := func(b byte) bool {
+		return b == '#' || b == '~'
+	}
+	for j := 0; j < g.h-1; j++ {
+		for i := 0; i < g.w; i++ {
+			if g.get(i, j) != '|' {
+				continue
+			}
+			below := g.get(i, j+1)
+			if below == '|' {
+				continue
+			}
+			if below == 0 {
+				g.set(i, j+1, '|')
+				changed = true
+			} else if isblocked(below) {
+				// find the (inclusive) range of the floor below us
+				var left, right int
+				for left = i; isblocked(g.get(left, j+1)); left-- {
+				}
+				for right = i; isblocked(g.get(right, j+1)); right++ {
+				}
+				left += 1
+				right -= 1
+				bl, br := false, false
+				for k := i; k >= left; k-- {
+					if g.get(k, j) == '#' {
+						left = k + 1
+						bl = true
+						break
+					}
+				}
+				for k := i; k <= right; k++ {
+					if g.get(k, j) == '#' {
+						right = k - 1
+						br = true
+						break
+					}
+				}
+				if bl && br {
+					for k := left; k <= right; k++ {
+						g.set(k, j, '~')
+						changed = true
+					}
+				} else {
+					if !bl {
+						left -= 1
+					}
+					if !br {
+						right += 1
+					}
+					for k := left; k <= right; k++ {
+						if g.get(k, j) != '|' {
+							g.set(k, j, '|')
+							changed = true
+						}
+					}
+				}
+			}
+		}
+	}
+	return changed
+}
+
 func getlines(n string) *grid {
 	grid := grid{}
 	for _, line := range strings.Split(n, "\n") {
@@ -93,7 +159,7 @@ func getlines(n string) *grid {
 }
 
 func main() {
-	g := getlines(ex)
+	g := getlines(input)
 	const infinity = 1000000
 	mx := infinity
 	Mx := -infinity
@@ -105,11 +171,46 @@ func main() {
 			}
 		}
 	}
+	g.set(500, 0, '|')
 	mx = max(mx, 0)
 	Mx = min(Mx, g.w-1)
+	var iter int
+	for iter = 0; ; iter++ {
+		if false {
+			fmt.Println("after", iter, "steps")
+			for _, row := range g.g {
+				fmt.Println(strings.ReplaceAll(string(row), "\x00", ".")[mx : Mx+1])
+			}
+			fmt.Println()
+		}
+		if changed := g.tick(); !changed {
+			break
+		}
+	}
+	fmt.Println("after", iter, "steps")
 	for _, row := range g.g {
 		fmt.Println(strings.ReplaceAll(string(row), "\x00", ".")[mx : Mx+1])
 	}
+	fmt.Println()
+	topline := 1000
+	for ri, row := range g.g {
+		for _, b := range row {
+			if b == '#' {
+				topline = min(topline, ri)
+			}
+		}
+	}
+	water := 0
+	fmt.Println(topline)
+	for _, row := range g.g[topline:] {
+		for _, b := range row {
+			if b == '|' || b == '~' {
+				water++
+			}
+		}
+	}
+	// subtract one to exclude source
+	fmt.Println(water)
 }
 
 var (
