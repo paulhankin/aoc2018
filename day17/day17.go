@@ -200,17 +200,19 @@ func main() {
 			}
 		}
 	}
-	water := 0
-	fmt.Println(topline)
+	dropWater := 0
+	flatWater := 0
 	for _, row := range g.g[topline:] {
 		for _, b := range row {
-			if b == '|' || b == '~' {
-				water++
+			if b == '|' {
+				dropWater++
+			} else if b == '~' {
+				flatWater++
 			}
 		}
 	}
-	// subtract one to exclude source
-	fmt.Println(water)
+	fmt.Println(flatWater + dropWater)
+	fmt.Println(flatWater)
 }
 
 var (
